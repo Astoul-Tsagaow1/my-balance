@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="project.css">
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans|Source+Sans+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="date_Budget_Incumehead_EXspenseshead_wrapper">
+
+        <!-- להוסיף תאריך  -->
+        <h3> Available Budjet in<span id="month">seftember 2019</span> </h3>
+
+
+        <!-- כמה יש לו בחשבון  -->
+        <div id="budget">
+            <h1 id="Balancetitle">0</h1>
+
+        </div>
+        <!-- כמה הוא הכניס + -->
+        <p id="incumeHeadvalue"><span class="icumeheadtitle">INCOME</span><span id="incomeheadNumbers">+0.00</span></p>
+
+        <!-- כמה הוא הוציא  -->
+
+        <p id="exspensesHeadvalue"><span class="exspenseheadtitel">EXPENSES</span> <span id="exspensesheadNumbers">-0.00</span><span id="GeneralPercentage">-</span></p>
+    </div>
+
+
+    </div>
+        <div class="select_and_input_container">
+            <select  id="Selecte_Pluse_Minus" onclick="ChangeBorderColors()">
+                <!-- פלוס ומינוס  -->
+                <option value="-">-</option>
+                <option value="+">+</option>
+            </select>
+
+            <input id="userdescriptions" type="text"  placeholder="Add descriptions">
+
+            <input type="number" name="" id="userNumberss" placeholder="value">
+          <span><a href="#home"><i id="iconeColor" class="far fa-check-circle" onclick="AftersendDescriptionsNumbers()"></i></a></span>
+        </div>
+    </div>
+    <div class="Income_and_EXspenses_bootom_list">
+         <div class="INCOME_list_bootom">
+            <h3 class="INCOME_BOOTOM_TITEL"> INCOME </h3>
+            <ul id="incomelistUL">
+                
+            </ul>
+        </div>
+        <div class="EXPENSES_list_bootom">
+             <h3 class="EXPENSES_BOOTOM_TITEL">EXPENSES</h3>
+            <ul id="expenseslistUL">
+               
+            </ul>
+        </div>
+
+    </div>
+    <script src="PROJECT_OBJECTVRSION.JS"></script>
+
+</body>
+</html>

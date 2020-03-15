@@ -1,0 +1,262 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-family: 'Fira Sans', sans-serif;
+    }
+.date_Budget_Incumehead_EXspenseshead_wrapper {
+    height: 275px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    background-image: url('back.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/* titel */
+h3{
+    color: white;
+}
+h1{
+    margin: 0;
+    font-size: -webkit-xxx-large;
+    color: white;
+}
+/* income */
+#incumeHeadvalue{
+    background-color: rgb(51, 169, 164);
+    height: 16%;
+    width: 24%;
+    color: rgb(255, 255, 255);
+    position: relative;
+
+}
+#incomeheadNumbers{
+    position: absolute;
+    left: 70%;
+}
+.icumeheadtitle{
+    position: absolute;
+    color: black;
+}
+/* exspense */
+#exspensesHeadvalue{
+    background-color: rgb(249, 53, 58);
+    height: 16%;
+    width: 24%;
+    color: rgb(255, 255, 255);
+    position: relative;
+    margin: 0;
+}
+.exspenseheadtitel{
+    position: absolute;
+    color: black;
+
+
+}
+#exspensesheadNumbers{
+    position: absolute;
+    left: 70%;
+}
+/* icone */
+.fa-check-circle:before {
+    content: "\f058";
+    display: flex;
+
+}
+/* percentage */
+#GeneralPercentage{
+    background-color: rgba(255, 255, 255, 0.3);
+    position: absolute;
+       top: 28%;
+       left: 88%;
+       padding: 0px;
+       height: 45%;
+       width: 10%;
+       text-align: center;
+   }
+
+/* ****************************************************** */
+.select_and_input_container{
+    border-bottom: rgb(245, 244, 245) solid 1px;
+    height: 76px;
+    background-color: rgb(245, 244, 245);
+
+}
+/* select */
+#Selecte_Pluse_Minus{
+    height: 40px;
+    width: 50px;
+    margin-right: 20px;
+    margin-top: 13px;
+    border-radius: 10%;
+    margin-left: 27%;
+    padding: 0;
+    outline: none;
+    border: 1px solid rgb(189, 189, 189)
+}
+/* input descriptions and numbers */
+input{
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid rgb(189, 189, 189);
+    width: 28%;
+    padding: 0;
+    outline: none;
+}
+/* input */
+input::placeholder{
+    color: gray;
+    padding-left:7px;
+  }
+  /* input numbers */
+  #userNumberss{
+    width: 7%;
+    margin-left: 8px;
+}
+/* icone check */
+.fa-check-circle{
+    font-size: 25px;
+ }
+ /* a  */
+ a{
+    color: rgb(0, 0, 0);
+}
+/* botoom lists */
+ul li {
+    list-style-type: none;
+}
+ul{
+    margin: 0;
+    padding: 0;
+}
+/* lists */
+  .Income_and_EXspenses_bootom_list{
+    display:flex;
+    justify-content: center;
+    margin-top: 3%;
+}
+/* INCOME LIST */
+.INCOME_list_bootom{
+    width: 34%;
+    margin: 1rem;
+   
+   }
+ .INCOME_BOOTOM_TITEL{
+    color: rgb(51, 169, 164);
+    margin: 0;
+
+    }
+.Income_List_Bottom_Numbers{
+        position: absolute;
+        left: 90%;
+        bottom: 4px;
+        padding: 0;
+        margin: 0;
+        color: rgb(51, 169, 164);
+       transition: 0.2s;
+    }
+    /* li INCOME */
+.Li_Income_List{
+        border-bottom:1px solid rgb(189, 189, 189);
+        padding: 2% ; 
+        position: relative;  
+        border-top: 1px solid rgb(189, 189, 189);
+    }
+.Li_Income_List:hover .fa-times-circle:before {
+        opacity:1 !important;
+        
+    }
+.Li_Income_List:hover .Income_List_Bottom_Numbers {
+        left: 70%;
+    
+    }
+    .Li_Income_List:nth-child(even){
+        background-color:rgb(245, 244, 245);
+    }
+    /* EXSPENSES LIST */
+.EXPENSES_list_bootom{
+   width: 34%;
+   margin: 1rem;
+   }
+
+.EXPENSES_BOOTOM_TITEL{
+    color: rgb(249, 53, 58);
+    margin: 0;
+
+}
+.EXspenses_List_Bottom_Numbers{
+    position: absolute;
+    left: 73%;
+    bottom: 4px;
+    padding: 0;
+    margin: 0;
+    color:  rgb(249, 53, 58);
+    transition: 0.2s;
+}
+/* li exspens */
+.Li_EXspenses_List:nth-child(even){
+    background-color:rgb(245, 244, 245);
+
+}
+.Li_EXspenses_List{
+    border-bottom:0.5px solid rgb(189, 189, 189);
+    padding: 2% ; 
+    position: relative;
+    border-top: 0.5px solid rgb(189, 189, 189);
+}
+.Li_EXspenses_List:hover .fa-times-circle:before{
+    opacity:1 !important;
+}
+.Li_EXspenses_List:hover .EXspenses_List_Bottom_Numbers{
+    left: 65%;
+
+}
+span{
+    padding: 10px;
+}
+/* x icone  */
+.fa-times-circle:before {
+    content: "\f057";
+    position: absolute;
+    left: 90%;
+    bottom: 9px;
+    opacity: 0;
+    transition: 0.2s;
+}
+/* אחוזים */
+
+.presencheEX{
+    position: absolute;
+    left: 90%;
+    background-color: rgb(246, 166, 171);
+    transition: 0.2s;
+    height: 10px;
+    width: 25px;
+    padding: 4px;
+    bottom: 4px;
+
+}
+.Li_EXspenses_List:hover .presencheEX{
+    left: 78%;
+}
+
+@media screen and (max-width: 850px) {
+    .Income_and_EXspenses_bootom_list{
+       flex-flow: column;
+    }
+    #incumeHeadvalue{
+        background-color: rgb(51, 169, 164);
+        width: 50%;
+    }
+    #exspensesHeadvalue{
+        background-color: rgb(249, 53, 58);
+        width: 50%;
+    }
+    
+  }
+
+ 
+
+
